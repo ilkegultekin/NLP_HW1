@@ -8,7 +8,6 @@ import shutil
 import argparse
 import math
 import operator
-from tarfile import pwd
 
 
 def cleanDirectory(dirPath):
