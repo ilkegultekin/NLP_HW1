@@ -8,6 +8,7 @@ import shutil
 import argparse
 import math
 import operator
+from tarfile import pwd
 
 
 def cleanDirectory(dirPath):
@@ -282,7 +283,7 @@ def calculatePriors(trainingSetPath):
     for d in dList:
         dirFullPath = createFullPathFromDir(trainingSetPath, d)
         fList = [x for x in os.listdir(dirFullPath) if x != '.DS_Store']
-        priors[d] = len(fList)
+        priors[d] = math.log(len(fList))
     return priors
         
             
