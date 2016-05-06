@@ -16,3 +16,15 @@ This repository contains the implementation of a naive bayes text classifier by 
 - -tar (--target) TARGETDIRPATH : This parameter contains the path to the target directory that will contain the training and the test data set directories created by the function "createDataSet"
 - You can also run python main.py -h in the terminal to get the same information
 
+
+# CMPE 561 Natural Language Processing 2016 Spring Homework 2
+
+This repository contains the Part of Speech tagger implementation using Hidden Markov Models and Viterbi algorithm
+
+## How to compile and run 
+
+- From the command line, go to the directory where the project's source folder resides
+- First run the following command "python train_hmm_tagger.py --fileLoc <trainingFilePath> --<tag>", where <trainingFilePath> is the path to the file containing the training set and <tag> can be either cpostag or postag. This will train the hmm tagger and create three txt files which contain the probabilities computed from the training set and it will be used by the next program
+- Then run the command "python hmm_tagger.py --testFile <testFilePath> --outputFile <outputFilePath>". This will compute the tags of the test set using the probabilities computed in the previous step
+- Finally run the command "python evaluate_hmm_tagger.py --outputFile <outputFilePath> --goldFile <goldFilePath> --<tag>". The last argument specifies which tag should be used in the gold standard file (since the sample you gave us contains both the cpostags and the postags) The program will output the total tag accuracy and the accuracy for each tag separately, as well as the confusion matrix 
+

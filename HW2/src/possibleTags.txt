@@ -1,0 +1,13 @@
+Adv
+Noun
+Det
+Zero
+Postp
+Pron
+Ques
+Verb
+Interj
+Dup
+Conj
+Num
+Adj
