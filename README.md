@@ -16,7 +16,15 @@ This repository contains the implementation of a naive bayes text classifier by 
 - -tar (--target) TARGETDIRPATH : This parameter contains the path to the target directory that will contain the training and the test data set directories created by the function "createDataSet"
 - You can also run python main.py -h in the terminal to get the same information
 
+```bash
+      python main.py -f createDataSet -ds /Users/Gercek/Downloads/69yazar/raw_texts -tar /Users/Gercek/Desktop/NLP_HW1_Test        
+      python main.py -f naiveBayes -tr /Users/Gercek/Desktop/NLP_HW1_Test/trainingSet -tst /Users/Gercek/Desktop/NLP_HW1_Test/testSet
+```
 
+
+    
+
+  
 # CMPE 561 Natural Language Processing 2016 Spring Homework 2
 
 This repository contains the Part of Speech tagger implementation using Hidden Markov Models and Viterbi algorithm
