@@ -17,6 +17,8 @@ def cleanDirectory(dirPath):
         os.remove(dirPath + "/" + fileName)
 
 def createDataSetDirectory(fileDirPath, targetDirPath):
+    if not os.path.isdir(targetDirPath):
+        os.mkdir(targetDirPath)
     fileDirList = [x for x in os.listdir(fileDirPath) if x != '.DS_Store']
     trainingDir = targetDirPath + "/trainingSet"
     testDir = targetDirPath + "/testSet"
